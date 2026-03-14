@@ -1,0 +1,7 @@
+services:
+  water-reminder:
+    build: .
+    container_name: water-reminder-bot
+    env_file:
+      - .env
+    restart: unless-stopped
